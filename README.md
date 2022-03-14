@@ -19,3 +19,6 @@ The `save` parameter can be used to choose of often (in milliseconds) audio will
 ```sh
 $: voodoo template ./snoop -o play.webm --params save:1000
 ```
+
+## Legal Disclaimer
+Usage of this code for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. Only use for educational purposes.
