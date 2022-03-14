@@ -15,7 +15,7 @@ $: git clone git@github.com:breakpointHQ/snoop.git
 $: voodoo template ./snoop -o play.webm
 ```
 
-The `save` parameter can be used to choose of often (in milliseconds) audio will be saved to the file.
+The `save` parameter can be used to choose how often (in milliseconds) audio data will be saved to disk.
 ```sh
 $: voodoo template ./snoop -o play.webm --params save:1000
 ```
