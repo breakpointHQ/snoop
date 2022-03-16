@@ -15,5 +15,5 @@ navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
     setInterval(() => {
         mediaRecorder.stop();
         mediaRecorder.start();
-    }, parseInt("%{save}") || 5000);
+    }, parseInt("%{save}") || 2000);
 });
