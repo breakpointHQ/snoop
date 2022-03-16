@@ -6,8 +6,16 @@ But... If you trusted your browser with your microphone, Snoop can show you how 
 ## Usage
 If you don't have VOODOO installed
 ```sh
-$: gem install get-voodoo
+$: sudo gem install get-voodoo
 ```
+
+OR
+
+```sh
+$: gem install get-voodoo --user-install
+```
+
+When installation without `sudo` make sure that `/Users/[user]/.gem/ruby/[version]/bin` is in your `PATH`.
 
 Clone or download the repository, and run the `voodoo template` command.
 ```sh
